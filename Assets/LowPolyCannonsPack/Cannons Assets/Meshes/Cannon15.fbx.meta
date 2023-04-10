@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: c9ab97c15c6acbd4b8ad6068c38b9389
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cannon15BackWheelHolder
+    100004: Cannon15Barrel
+    100006: Cannon15Barrel.001
+    100008: Cannon15CannonBarrelHolder
+    100010: Cannon15FrontWheelHolder
+    100012: Cannon15LBackWheel
+    100014: Cannon15LFrontWheel
+    100016: Cannon15LSide
+    100018: Cannon15LSideHolder
+    100020: Cannon15RBackWheel
+    100022: Cannon15RFrontWheel
+    100024: Cannon15RSide
+    100026: Cannon15RSideHolder
+    400000: //RootNode
+    400002: Cannon15BackWheelHolder
+    400004: Cannon15Barrel
+    400006: Cannon15Barrel.001
+    400008: Cannon15CannonBarrelHolder
+    400010: Cannon15FrontWheelHolder
+    400012: Cannon15LBackWheel
+    400014: Cannon15LFrontWheel
+    400016: Cannon15LSide
+    400018: Cannon15LSideHolder
+    400020: Cannon15RBackWheel
+    400022: Cannon15RFrontWheel
+    400024: Cannon15RSide
+    400026: Cannon15RSideHolder
+    2100000: CannonsMainMaterial
+    2300000: Cannon15BackWheelHolder
+    2300002: Cannon15Barrel
+    2300004: Cannon15Barrel.001
+    2300006: Cannon15CannonBarrelHolder
+    2300008: Cannon15FrontWheelHolder
+    2300010: Cannon15LBackWheel
+    2300012: Cannon15LFrontWheel
+    2300014: Cannon15LSide
+    2300016: Cannon15LSideHolder
+    2300018: Cannon15RBackWheel
+    2300020: Cannon15RFrontWheel
+    2300022: Cannon15RSide
+    2300024: Cannon15RSideHolder
+    3300000: Cannon15BackWheelHolder
+    3300002: Cannon15Barrel
+    3300004: Cannon15Barrel.001
+    3300006: Cannon15CannonBarrelHolder
+    3300008: Cannon15FrontWheelHolder
+    3300010: Cannon15LBackWheel
+    3300012: Cannon15LFrontWheel
+    3300014: Cannon15LSide
+    3300016: Cannon15LSideHolder
+    3300018: Cannon15RBackWheel
+    3300020: Cannon15RFrontWheel
+    3300022: Cannon15RSide
+    3300024: Cannon15RSideHolder
+    4300000: Cannon15RFrontWheel
+    4300002: Cannon15RBackWheel
+    4300004: Cannon15RSide
+    4300006: Cannon15LSideHolder
+    4300008: Cannon15LSide
+    4300010: Cannon15BackWheelHolder
+    4300012: Cannon15FrontWheelHolder
+    4300014: Cannon15CannonBarrelHolder
+    4300016: Cannon15Barrel
+    4300018: Cannon15Barrel.001
+    4300020: Cannon15RSideHolder
+    4300022: Cannon15LFrontWheel
+    4300024: Cannon15LBackWheel
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
