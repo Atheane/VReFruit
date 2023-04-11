@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 865075385244835223, guid: 537de9689763bd24cb0b579933121fd7,
         type: 3}
       propertyPath: m_Name
-      value: Complete XR Origin Hands Set Up
+      value: XR
       objectReference: {fileID: 0}
     - target: {fileID: 5773256366622995465, guid: 537de9689763bd24cb0b579933121fd7,
         type: 3}
