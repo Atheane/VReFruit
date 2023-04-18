@@ -12,6 +12,7 @@ public class Fruit : MonoBehaviour
     [SerializeField]
     private OffsetSO offsetSO;
     private GameObject instance;
+    private GameObject fx;
     private bool isCut;
     private bool isSelected;
     private XRGrabInteractable interactable;
@@ -22,6 +23,13 @@ public class Fruit : MonoBehaviour
         this.AttachInteractable();
     }
 
+    void Update()
+    {
+        if (this.fx && this.instance) {
+            this.fx.transform.position = this.instance.transform.position;
+        }
+    }
+
     private void Create() {
         this.instance = Instantiate(this.fruitSO.prefabWhole, this.transform.position, Quaternion.identity);
         this.instance.transform.Translate(new Vector3(this.offsetSO.translation.x, this.offsetSO.translation.y, this.offsetSO.translation.z));
@@ -29,6 +37,8 @@ public class Fruit : MonoBehaviour
         this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
         Rigidbody rigidbody = this.instance.AddComponent<Rigidbody>();
         rigidbody.useGravity = true;
+        this.fx = Instantiate(this.fruitSO.fx, this.instance.transform.position, Quaternion.identity);
+        this.fx.SetActive(false);
     } 
 
     private void AttachInteractable() {
@@ -59,6 +69,7 @@ public class Fruit : MonoBehaviour
     }
 
     private void Slice(Interaction interactionType) {
+        this.fx.SetActive(true);
         this.DetachInteractable();
         Destroy(this.instance);
         this.instance = Instantiate(this.fruitSO.prefabCut, this.transform.position, Quaternion.identity);
@@ -67,6 +78,8 @@ public class Fruit : MonoBehaviour
         this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
         Rigidbody rigidbody = this.instance.AddComponent<Rigidbody>();
         rigidbody.useGravity = true;
+        //Destroy(fx);
         this.isCut = true;
+        //todo sendEvent to Game for points computation
     }
 }

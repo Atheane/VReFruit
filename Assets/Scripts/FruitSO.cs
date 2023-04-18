@@ -7,4 +7,5 @@ public class FruitSO : ScriptableObject
 {
     public GameObject prefabWhole;
     public GameObject prefabCut;
+    public GameObject fx;
 }
