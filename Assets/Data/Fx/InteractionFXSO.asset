@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd461622c7771b04688e17c1642acf4c, type: 3}
-  m_Name: Apple
+  m_Script: {fileID: 11500000, guid: d31c2cc097aa59e4d8370d67f2659f8f, type: 3}
+  m_Name: InteractionFXSO
   m_EditorClassIdentifier: 
-  translation: {x: 0, y: 1.2, z: 1}
-  rotation: {x: 0, y: 0, z: 0}
-  scale: {x: 0.5, y: 0.5, z: 0.5}
+  handFx: {fileID: 2128805881050521467, guid: 8033501e6913a5b4e9dadbb1e0e39b4e, type: 3}
+  rayFx: {fileID: 3153472991145048103, guid: 921226c5865cb8041a6bd88832ab1c62, type: 3}
