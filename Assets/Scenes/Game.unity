@@ -242,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitSO: {fileID: 11400000, guid: 9ac5bfae557a0b541b84115117b9bb8f, type: 2}
   offsetSO: {fileID: 11400000, guid: 4553c1d6b14fb0b40b8fd55db4c06769, type: 2}
+  fxSO: {fileID: 11400000, guid: 54ccf1e14e103a946986db517773c0b3, type: 2}
 --- !u!4 &249596690
 Transform:
   m_ObjectHideFlags: 0

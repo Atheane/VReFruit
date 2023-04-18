@@ -11,35 +11,37 @@ public class Fruit : MonoBehaviour
     private FruitSO fruitSO;
     [SerializeField]
     private OffsetSO offsetSO;
+    [SerializeField]
     private GameObject instance;
-    private GameObject fx;
+    private GameObject fruitFx;
     private bool isCut;
     private bool isSelected;
     private XRGrabInteractable interactable;
-
+    private Canvas scoreUI;
+    private int score;
     void Start()
     {
-        this.Create();
+        this.CreateFruit();
         this.AttachInteractable();
     }
 
     void Update()
     {
-        if (this.fx && this.instance) {
-            this.fx.transform.position = this.instance.transform.position;
+        if (this.fruitFx && this.instance) {
+            this.fruitFx.transform.position = this.instance.transform.position;
         }
     }
 
-    private void Create() {
+    private void CreateFruit() {
         this.instance = Instantiate(this.fruitSO.prefabWhole, this.transform.position, Quaternion.identity);
         this.instance.transform.Translate(new Vector3(this.offsetSO.translation.x, this.offsetSO.translation.y, this.offsetSO.translation.z));
         this.instance.transform.Rotate(this.offsetSO.rotation.x, this.offsetSO.rotation.y, this.offsetSO.rotation.z);
         this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
         Rigidbody rigidbody = this.instance.AddComponent<Rigidbody>();
         rigidbody.useGravity = true;
-        this.fx = Instantiate(this.fruitSO.fx, this.instance.transform.position, Quaternion.identity);
-        this.fx.SetActive(false);
-    } 
+        this.fruitFx = Instantiate(this.fruitSO.fx, this.instance.transform.position, Quaternion.identity);
+        this.fruitFx.SetActive(false);
+    }
 
     private void AttachInteractable() {
         this.interactable = this.instance.AddComponent<XRGrabInteractable>();
@@ -69,7 +71,7 @@ public class Fruit : MonoBehaviour
     }
 
     private void Slice(Interaction interactionType) {
-        this.fx.SetActive(true);
+        this.fruitFx.SetActive(true);
         this.DetachInteractable();
         Destroy(this.instance);
         this.instance = Instantiate(this.fruitSO.prefabCut, this.transform.position, Quaternion.identity);
@@ -78,7 +80,6 @@ public class Fruit : MonoBehaviour
         this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
         Rigidbody rigidbody = this.instance.AddComponent<Rigidbody>();
         rigidbody.useGravity = true;
-        //Destroy(fx);
         this.isCut = true;
         //todo sendEvent to Game for points computation
     }
