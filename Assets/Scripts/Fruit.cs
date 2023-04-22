@@ -11,9 +11,9 @@ public class Fruit : MonoBehaviour
     private FruitSO fruitSO;
     [SerializeField]
     private OffsetSO offsetSO;
-    [SerializeField]
-    private GameObject instance;
     private GameObject fruitFx;
+
+    private GameObject instance;
     private bool isCut;
     private bool isSelected;
     private XRGrabInteractable interactable;
