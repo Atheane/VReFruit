@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using TMPro;
 
 enum Interaction {
     HOVER_ENTERED,
@@ -11,6 +12,9 @@ public class Fruit : MonoBehaviour
     private FruitSO fruitSO;
     [SerializeField]
     private OffsetSO offsetSO;
+    [SerializeField]
+    private PointsSO pointsSO;
+
     private GameObject fruitFx;
 
     private GameObject instance;
@@ -45,8 +49,8 @@ public class Fruit : MonoBehaviour
 
     private void AttachInteractable() {
         this.interactable = this.instance.AddComponent<XRGrabInteractable>();
-        this.interactable.hoverEntered.AddListener(OnHoverEntered);
         this.interactable.selectEntered.AddListener(OnSelectEntered);
+        this.interactable.hoverEntered.AddListener(OnHoverEntered);
         this.interactable.selectExited.AddListener(OnSelectExited); 
     }
     
@@ -57,13 +61,17 @@ public class Fruit : MonoBehaviour
     }
 
     private void OnHoverEntered(HoverEnterEventArgs args) {
+        Debug.Log("HOVER_ENTERED");
         if (this.isSelected) return;
         this.Slice(Interaction.HOVER_ENTERED);
+        this.AddPoints(Interaction.HOVER_ENTERED);
     }
 
     private void OnSelectEntered(SelectEnterEventArgs args) {
+        Debug.Log("SELECT_ENTERED");
         this.isSelected = true;
         this.Slice(Interaction.SELECT_ENTERED);
+        this.AddPoints(Interaction.SELECT_ENTERED);
     }
 
     private void OnSelectExited(SelectExitEventArgs args) {
@@ -82,5 +90,15 @@ public class Fruit : MonoBehaviour
         rigidbody.useGravity = true;
         this.isCut = true;
         //todo sendEvent to Game for points computation
+    }
+
+    private void AddPoints(Interaction interactionType) {
+        GameObject pointsCanvas = Instantiate(this.pointsSO.prefabPositivePoints, this.transform.position, this.transform.rotation);
+        pointsCanvas.transform.parent = this.instance.transform;
+        if (interactionType == Interaction.HOVER_ENTERED) {
+            pointsCanvas.GetComponentInChildren<TMP_Text>().text = "+25";
+        } else {
+            pointsCanvas.GetComponentInChildren<TMP_Text>().text = "+75";
+        }
     }
 }

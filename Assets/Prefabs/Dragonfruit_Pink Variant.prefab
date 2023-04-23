@@ -119,30 +119,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f84875e07509c438a4810a2c034df9, type: 3}
---- !u!1 &870334187468966877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1875243674880848467, guid: 49f84875e07509c438a4810a2c034df9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1590395718733232526}
-  m_PrefabAsset: {fileID: 0}
---- !u!223 &8417580402183800910
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870334187468966877}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
