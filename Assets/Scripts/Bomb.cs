@@ -19,7 +19,7 @@ public class Bomb : Projectile
     private async void LaunchCoolDown() {
         this.fx.SetActive(true);
         this.interactable.hoverEntered.RemoveAllListeners();
-        await Task.Delay(2000);
+        await Task.Delay(4000);
         this.Explode();
 }
 
