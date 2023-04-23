@@ -1,7 +1,7 @@
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine;
 using TMPro;
 using System.Threading.Tasks;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine;
 
 public class Bomb : Projectile
 {
@@ -28,13 +28,17 @@ public class Bomb : Projectile
         Destroy(this.instance);
         this.instance = Instantiate(this.projectileSO.prefabAfter, lastTransform.position, lastTransform.rotation);
         this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
+        this.RemovePoints();
     }
 
-    private void RemovePoints() {
+    private async void RemovePoints() {
         GameObject pointsCanvas = Instantiate(this.pointsSO.prefabNegativePoints, this.transform.position, this.transform.rotation);
         pointsCanvas.transform.parent = this.instance.transform;
         //todo sendEvent to Game for points computation
         var points = this.aleas.Next(50, 100);
         pointsCanvas.GetComponentInChildren<TMP_Text>().text = $"-{points}";
+        Debug.Log("SEND MESSAGE TO GAME WITH - " + points + "POINTS");
+        await Task.Delay(1000);
+        Destroy(this.instance);
     }
 }
