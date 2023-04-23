@@ -19,10 +19,9 @@ public class Fruit : Projectile
     private void Slice() {
         this.fx.SetActive(true);
         this.interactable.hoverEntered.RemoveAllListeners();
+        var lastTransform = this.instance.transform;
         Destroy(this.instance);
-        this.instance = Instantiate(this.projectileSO.prefabAfter, this.transform.position, Quaternion.identity);
-        this.instance.transform.Translate(new Vector3(this.offsetSO.translation.x, this.offsetSO.translation.y, this.offsetSO.translation.z));
-        this.instance.transform.Rotate(this.offsetSO.rotation.x, this.offsetSO.rotation.y, this.offsetSO.rotation.z);
+        this.instance = Instantiate(this.projectileSO.prefabAfter, lastTransform.position, lastTransform.rotation);
         this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
     }
 
