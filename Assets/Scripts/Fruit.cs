@@ -20,7 +20,6 @@ public class Fruit : Projectile
         var lastTransform = this.instance.transform;
         Destroy(this.instance);
         this.instance = Instantiate(this.projectileSO.prefabAfter, lastTransform.position, lastTransform.rotation);
-        this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
         this.fx.transform.parent = this.instance.transform;
         this.fx.SetActive(true);
         this.AddPoints();
