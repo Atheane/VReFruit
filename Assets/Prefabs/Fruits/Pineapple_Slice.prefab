@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 477424885202391577}
   - component: {fileID: 1090243732501783154}
   - component: {fileID: 3557311049076463224}
+  - component: {fileID: 7312886230063016628}
   m_Layer: 0
   m_Name: Pineapple_Slice
   m_TagString: Untagged
@@ -98,3 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 28c117ac0b3606c4db9ef3d81dd6f55d, type: 3}
+--- !u!54 &7312886230063016628
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6354180193998086419}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

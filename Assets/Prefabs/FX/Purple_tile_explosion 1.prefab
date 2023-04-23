@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198931357903003786}
   - component: {fileID: 199536301035609510}
   m_Layer: 0
-  m_Name: Purple_tile_explosion
+  m_Name: Purple_tile_explosion 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

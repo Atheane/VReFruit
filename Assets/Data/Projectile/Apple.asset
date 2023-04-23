@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a27c4b126224d439c4dc8f9309df76, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: 
-  prefabWhole: {fileID: 1007152147719549167, guid: c688a473aaea14c47b7292b27a882395,
+  prefabInit: {fileID: 1007152147719549167, guid: c688a473aaea14c47b7292b27a882395,
     type: 3}
-  prefabCut: {fileID: 1007152147719549167, guid: 92d83aa161cf84943aafb453dde20f8c,
+  prefabAfter: {fileID: 1007152147719549167, guid: 92d83aa161cf84943aafb453dde20f8c,
     type: 3}
-  fx: {fileID: 1598246102268290, guid: 79067d42c0bc09e479c5bde4f5365047, type: 3}
+  fx: {fileID: 1214339452547136, guid: 5e5b24823dce5af4b9d9ad3d9a92755b, type: 3}
