@@ -585,6 +585,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetSO: {fileID: 11400000, guid: 21677bfd80e906b4f8d3fd8ae6813c66, type: 2}
+--- !u!114 &675613143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675613141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bd4bcb864dae04bbbe04047f6423a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileTypes:
+  - {fileID: 249596687}
+  - {fileID: 88008650}
+  - {fileID: 263846860}
+  - {fileID: 1811727112}
+  - {fileID: 1059577143}
+  - {fileID: 688006906}
+  - {fileID: 1673587759}
+  - {fileID: 998112845}
+  - {fileID: 1079692576}
+  - {fileID: 272320115}
+  - {fileID: 1285720301}
+  - {fileID: 1554317073}
+  - {fileID: 1993687560}
+  - {fileID: 600209922}
+  gameDuration: 5
 --- !u!1 &688006906
 GameObject:
   m_ObjectHideFlags: 0

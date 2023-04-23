@@ -14,9 +14,4 @@ public class Offset : MonoBehaviour
         this.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

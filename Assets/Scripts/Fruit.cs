@@ -32,7 +32,7 @@ public class Fruit : Projectile
         // create an animation on points (fade)
         var points = this.aleas.Next(25, 50);
         pointsCanvas.GetComponentInChildren<TMP_Text>().text = $"+{points}";
-        Debug.Log("SEND MESSAGE TO GAME WITH + " + points + "POINTS");
+        Debug.Log("SEND MESSAGE TO GAME WITH + " + points + " POINTS");
         await Task.Delay(1000);
         Destroy(this.instance);
     }
