@@ -1,6 +1,7 @@
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine;
 using TMPro;
+using System.Threading.Tasks;
 
 public class Bomb : Projectile
 {
@@ -12,12 +13,21 @@ public class Bomb : Projectile
 
     protected void OnHoverEntered(HoverEnterEventArgs args) {
         Debug.Log("BOMB HOVER");
-        this.Slice();
+        this.LaunchCoolDown();
     }
 
-    private void Slice() {
+    private async void LaunchCoolDown() {
         this.fx.SetActive(true);
         this.interactable.hoverEntered.RemoveAllListeners();
+        await Task.Delay(2000);
+        this.Explode();
+}
+
+    private void Explode() {
+        var lastTransform = this.instance.transform;
+        Destroy(this.instance);
+        this.instance = Instantiate(this.projectileSO.prefabAfter, lastTransform.position, lastTransform.rotation);
+        this.instance.transform.localScale = new Vector3(this.offsetSO.scale.x, this.offsetSO.scale.y, this.offsetSO.scale.z);
     }
 
     private void RemovePoints() {
