@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a27c4b126224d439c4dc8f9309df76, type: 3}
+  m_Name: Mango
+  m_EditorClassIdentifier: 
+  prefabInit: {fileID: 6406189700704579197, guid: f42f06d9afcc53941b095a4fc0dc00f4,
+    type: 3}
+  prefabAfter: {fileID: 7639230841374831977, guid: 9a15797bbc3947e45927d34d4988844f,
+    type: 3}
+  fx: {fileID: 1528118472902382, guid: 88bd901eac287f548b2b538e109702ef, type: 3}

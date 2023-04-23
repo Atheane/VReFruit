@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a27c4b126224d439c4dc8f9309df76, type: 3}
+  m_Name: Durian
+  m_EditorClassIdentifier: 
+  prefabInit: {fileID: 7153694067016401564, guid: 0e83fb550d6fed541a85aaa0a0299023,
+    type: 3}
+  prefabAfter: {fileID: 7917609047844554653, guid: af26d04f96790e7478c18a1ee62ad267,
+    type: 3}
+  fx: {fileID: 1154763232529554, guid: 40dab04a2cfc11b478c3a31b979fe908, type: 3}

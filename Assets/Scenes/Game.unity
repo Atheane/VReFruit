@@ -398,8 +398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 14710de50be322044a64773051a4852f, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &272320115
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,8 +444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: fb381e68d7dd9944eb5d326a1b9c7686, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &600209922
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,8 +490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: e98f1dce5d1beae4481268a283c27e86, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1001 &675613140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -629,8 +629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: ff36133c097a8dd44812785a21be9ce7, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &879875669
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,8 +743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 629c81cbeb228d44487c480bf6581e61, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1059577143
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,8 +789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 620b193175c2ba2428e1f92293655a75, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1079692576
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,8 +835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: b02b465f985724a429bde8a25d3f7f74, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1114789996
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,8 +881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 6b6c2c202487afc4db0b712a003c1a90, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1285720301
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,8 +927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 25a2c946f8638de469759c42595f1f00, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1554317073
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,8 +973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 01a744ba96561854c985573a5fe74e1c, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1673587759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,8 +1019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 7f9b7f3714ce9a2449a1484aa02b0108, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1811727112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,8 +1065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: 7098aadf4d58e6744882d81cb37e051d, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1 &1993687560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,5 +1111,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSO: {fileID: 0}
-  pointsSO: {fileID: 0}
+  projectileSO: {fileID: 11400000, guid: f07cf1cafa50c5042a6466ce04124f22, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
