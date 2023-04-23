@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
 
     public void StartMovingTowards(float speed)
     {
-        _target = Camera.main.transform.position;
+        _target = Camera.main.transform.position + new Vector3(0, 2.5f, 1);
         _speed = speed;
     }
 
