@@ -11,7 +11,7 @@ public class Bomb : Projectile
     }
 
     protected void OnHoverEntered(HoverEnterEventArgs args) {
-        Debug.Log("HOVER_ENTERED");
+        Debug.Log("BOMB HOVER");
         this.Slice();
     }
 

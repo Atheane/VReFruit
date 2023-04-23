@@ -19,17 +19,12 @@ public class Projectile : MonoBehaviour
     protected System.Random aleas = new System.Random();
     protected XRGrabInteractable interactable;
 
+    protected float GROUND_LEVEL = 0.13f;
+
     void Start()
     {
         this.CreateProjectile();
         this.AttachInteractable();
-    }
-
-    void Update()
-    {
-        if (this.fx && this.instance) {
-            this.fx.transform.position = this.instance.transform.position;
-        }
     }
 
     protected virtual XRGrabInteractable AttachInteractable() {
@@ -39,8 +34,8 @@ public class Projectile : MonoBehaviour
     private void CreateProjectile() {
         this.instance = Instantiate(this.projectileSO.prefabInit, this.transform.position, Quaternion.identity);
         this.SetInitialTransform(this.instance);
-        this.fx = Instantiate(this.projectileSO.fx, this.transform.position, Quaternion.identity);
-        this.SetInitialTransform(this.fx);
+        this.fx = Instantiate(this.projectileSO.fx, this.instance.transform.position + 0.2f*Vector3.up, Quaternion.identity);
+        this.fx.transform.parent = this.instance.transform;
         this.fx.SetActive(false);
     }
 
