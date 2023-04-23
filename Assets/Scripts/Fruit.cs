@@ -23,6 +23,8 @@ public class Fruit : MonoBehaviour
     private XRGrabInteractable interactable;
     private Canvas scoreUI;
     private int score;
+    private System.Random aleas = new System.Random();
+
     void Start()
     {
         this.CreateFruit();
@@ -49,33 +51,17 @@ public class Fruit : MonoBehaviour
 
     private void AttachInteractable() {
         this.interactable = this.instance.AddComponent<XRGrabInteractable>();
-        this.interactable.selectEntered.AddListener(OnSelectEntered);
         this.interactable.hoverEntered.AddListener(OnHoverEntered);
-        this.interactable.selectExited.AddListener(OnSelectExited); 
     }
     
     private void DetachInteractable() {
         this.interactable.hoverEntered.RemoveAllListeners();
-        this.interactable.selectEntered.RemoveAllListeners();
-        this.interactable.selectEntered.RemoveAllListeners();
     }
 
     private void OnHoverEntered(HoverEnterEventArgs args) {
         Debug.Log("HOVER_ENTERED");
-        if (this.isSelected) return;
         this.Slice(Interaction.HOVER_ENTERED);
         this.AddPoints(Interaction.HOVER_ENTERED);
-    }
-
-    private void OnSelectEntered(SelectEnterEventArgs args) {
-        Debug.Log("SELECT_ENTERED");
-        this.isSelected = true;
-        this.Slice(Interaction.SELECT_ENTERED);
-        this.AddPoints(Interaction.SELECT_ENTERED);
-    }
-
-    private void OnSelectExited(SelectExitEventArgs args) {
-        this.isSelected = false;
     }
 
     private void Slice(Interaction interactionType) {
@@ -89,16 +75,13 @@ public class Fruit : MonoBehaviour
         Rigidbody rigidbody = this.instance.AddComponent<Rigidbody>();
         rigidbody.useGravity = true;
         this.isCut = true;
-        //todo sendEvent to Game for points computation
     }
 
     private void AddPoints(Interaction interactionType) {
         GameObject pointsCanvas = Instantiate(this.pointsSO.prefabPositivePoints, this.transform.position, this.transform.rotation);
         pointsCanvas.transform.parent = this.instance.transform;
-        if (interactionType == Interaction.HOVER_ENTERED) {
-            pointsCanvas.GetComponentInChildren<TMP_Text>().text = "+25";
-        } else {
-            pointsCanvas.GetComponentInChildren<TMP_Text>().text = "+75";
-        }
+        //todo sendEvent to Game for points computation
+        var points = aleas.Next(25, 50);
+        pointsCanvas.GetComponentInChildren<TMP_Text>().text = $"+{points}";
     }
 }
