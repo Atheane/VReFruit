@@ -1,8 +1,8 @@
+using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine;
 using TMPro;
-using UnityEngine.XR.Interaction.Toolkit;
 
-public class Fruit : Projectile
+public class Bomb : Projectile
 {
     protected override XRGrabInteractable AttachInteractable() {
         this.interactable = this.instance.AddComponent<XRGrabInteractable>();
@@ -12,8 +12,8 @@ public class Fruit : Projectile
 
     protected void OnHoverEntered(HoverEnterEventArgs args) {
         Debug.Log("HOVER_ENTERED");
-        this.Slice();
-        this.AddPoints();
+        //this.Slice();
+        this.RemovePoints();
     }
 
     private void Slice() {
@@ -28,11 +28,11 @@ public class Fruit : Projectile
         rigidbody.useGravity = true;
     }
 
-    private void AddPoints() {
-        GameObject pointsCanvas = Instantiate(this.pointsSO.prefabPositivePoints, this.transform.position, this.transform.rotation);
+    private void RemovePoints() {
+        GameObject pointsCanvas = Instantiate(this.pointsSO.prefabNegativePoints, this.transform.position, this.transform.rotation);
         pointsCanvas.transform.parent = this.instance.transform;
         //todo sendEvent to Game for points computation
-        var points = this.aleas.Next(25, 50);
-        pointsCanvas.GetComponentInChildren<TMP_Text>().text = $"+{points}";
+        var points = this.aleas.Next(50, 100);
+        pointsCanvas.GetComponentInChildren<TMP_Text>().text = $"-{points}";
     }
 }

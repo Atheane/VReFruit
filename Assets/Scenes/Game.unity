@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 88008651}
+  - component: {fileID: 88008652}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -154,6 +155,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &88008652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88008650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884197a18369f77499f7ed4442bdafa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSO: {fileID: 11400000, guid: a93c1046993ed49478c018e851003db8, type: 2}
+  offsetSO: {fileID: 11400000, guid: 63f389607e2066c4fbf755d86de66f5f, type: 2}
+  pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!1001 &173817169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b81553b20e81a4c9df94fd077eedd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitSO: {fileID: 11400000, guid: 9ac5bfae557a0b541b84115117b9bb8f, type: 2}
+  projectileSO: {fileID: 11400000, guid: dd16b48dfb586e94cbbdbd4bac746b05, type: 2}
   offsetSO: {fileID: 11400000, guid: 4553c1d6b14fb0b40b8fd55db4c06769, type: 2}
   pointsSO: {fileID: 11400000, guid: 8b0db4c9f1b8a3b48906e837054e1135, type: 2}
 --- !u!224 &249596691
